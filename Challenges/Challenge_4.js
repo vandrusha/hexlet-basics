@@ -26,7 +26,7 @@
 // 19
 // Buzz
 
-const fizzBuzz = (begin, end) => {
+export default const fizzBuzz = (begin, end) => {
   if (begin > end) {
     return;
   }
