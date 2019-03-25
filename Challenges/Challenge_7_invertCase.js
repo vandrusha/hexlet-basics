@@ -17,7 +17,7 @@
 // 'BAR'.toLowerCase(); // 'bar';
 // 'b'.toLowerCase();   // 'b';
 
-const invertCase = (str) => {
+const export default invertCase = (str) => {
   let invertedString = '';
 
   for (let i = 0; i < str.length; i += 1) {
