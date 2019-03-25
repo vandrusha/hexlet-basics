@@ -14,7 +14,7 @@
 // Подсказки
 // Используйте функцию Math.floor(number) для округления до нижней границы
 
-const formattedTime = (minutes) => {
+const export default formattedTime = (minutes) => {
 
   if (Math.floor(minutes / 60) < 10 && minutes % 60 < 10) {
     const time = '0' + String(Math.floor(minutes / 60)) + ':' + '0' + String(minutes % 60)
