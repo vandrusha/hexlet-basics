@@ -18,7 +18,7 @@
 
 // 'foo'.substr(1, 2); // 'oo';
 
-const reverse = (str) => {
+const export default reverse = (str) => {
 const num = str.length - 1
 
   const rec = (num) => {
@@ -34,7 +34,7 @@ const num = str.length - 1
 
 // OR
 
-const reverse = (str) => {
+const export default reverse = (str) => {
 
   if (str.length === 1) {
     return str[0]
