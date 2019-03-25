@@ -31,3 +31,14 @@ const num = str.length - 1
   }
   return rec(num);
 }
+
+// OR
+
+const reverse = (str) => {
+
+  if (str.length === 1) {
+    return str[0]
+  }
+else return str[str.length - 1] + reverse(str.substr(0, str.length - 1))
+
+}
