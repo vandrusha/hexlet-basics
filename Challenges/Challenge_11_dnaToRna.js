@@ -27,7 +27,7 @@
 // Длина строки str находится так: str.length
 
 
-const dnaToRna = (dna) => {
+export default const dnaToRna = (dna) => {
   let rna = '';
 
   if (dna.length === 0) {
