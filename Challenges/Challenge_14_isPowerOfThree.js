@@ -26,3 +26,22 @@ export default const isPowerOfThree = (num) => {
   return result;
 
 }
+
+OR
+
+export default const isPowerOfThree = (num) => {
+
+  const help = (x) => {
+    if (3 ** x > num) {
+      return false;
+    }
+    else if (3 ** x === num) {
+      return x;
+    }
+    else {
+      return help(x + 1)
+    }
+  }
+
+  return help(-1) === false ? false : 'true (3^' + String(help(-1)) + ')';
+}
